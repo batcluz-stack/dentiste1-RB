@@ -1,51 +1,55 @@
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Layers, Activity, CheckCircle } from "lucide-react";
+import { Implant } from "@/components/icons";
+import { Activity, CheckCircle2 } from "lucide-react";
 
 export default function ImplantologiePage() {
     return (
         <div className="py-20">
             <Container>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+                <div className="max-w-4xl mx-auto text-center mb-16">
+                    <div className="relative inline-flex items-center justify-center mb-6">
+                        <div className="absolute -inset-2 rounded-full border-2 border-[#23e1f0] border-t-transparent rotate-45 opacity-80"></div>
+                        <div className="inline-flex items-center justify-center p-3 bg-white rounded-full shadow-sm">
+                            <Implant className="w-8 h-8 text-[#23e1f0]" />
+                        </div>
+                    </div>
+                    <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6 font-serif text-slate-900">
+                        Soins Restaurateurs
+                    </h1>
+                    <p className="text-xl text-muted-foreground leading-relaxed">
+                        Retrouvez le confort et la fonctionnalité de votre dentition.
+                        Implants, couronnes et bridges pour restaurer l'esthétique et la mastication durablement.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
                     <div>
-                        <div className="inline-flex items-center justify-center p-3 bg-blue-50 rounded-full mb-6">
-                            <Layers className="w-8 h-8 text-blue-600" />
-                        </div>
-                        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6 font-serif text-slate-900">
-                            Soins Restaurateurs
-                        </h1>
-                        <p className="text-xl text-muted-foreground mb-8">
-                            Retrouvez le confort et la fonctionnalité de votre dentition.
-                            Implants, couronnes et bridges pour restaurer l'esthétique et la mastication durablement.
-                        </p>
-                        <div className="flex flex-col gap-4">
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-blue-600 shrink-0 mt-1" />
-                                <div>
-                                    <h3 className="font-semibold text-slate-900">Confort Absolu</h3>
-                                    <p className="text-sm text-muted-foreground">Une sensation identique à celle de vos dents naturelles.</p>
-                                </div>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-blue-600 shrink-0 mt-1" />
-                                <div>
-                                    <h3 className="font-semibold text-slate-900">Préservation Osseuse</h3>
-                                    <p className="text-sm text-muted-foreground">L'implant stimule l'os de la mâchoire et empêche sa résorption.</p>
-                                </div>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-6 h-6 text-blue-600 shrink-0 mt-1" />
-                                <div>
-                                    <h3 className="font-semibold text-slate-900">Esthétique Parfaite</h3>
-                                    <p className="text-sm text-muted-foreground">Intégration invisible dans votre sourire.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="mt-10">
-                            <Button asChild size="lg">
-                                <Link href="/book">Bilan Implantologique</Link>
-                            </Button>
+                        <div className="bg-white/70 backdrop-blur-lg p-6 rounded-xl border border-white/20 shadow-xl">
+                            <ul className="space-y-4">
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" strokeWidth={3} />
+                                    <div>
+                                        <h3 className="font-semibold text-black">Confort Absolu</h3>
+                                        <p className="text-sm text-black">Une sensation identique à celle de vos dents naturelles.</p>
+                                    </div>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" strokeWidth={3} />
+                                    <div>
+                                        <h3 className="font-semibold text-black">Préservation Osseuse</h3>
+                                        <p className="text-sm text-black">L'implant stimule l'os de la mâchoire et empêche sa résorption.</p>
+                                    </div>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" strokeWidth={3} />
+                                    <div>
+                                        <h3 className="font-semibold text-black">Esthétique Parfaite</h3>
+                                        <p className="text-sm text-black">Intégration invisible dans votre sourire.</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div className="bg-slate-100 rounded-3xl aspect-[4/5] relative overflow-hidden flex items-center justify-center">

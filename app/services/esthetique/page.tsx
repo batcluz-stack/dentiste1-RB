@@ -1,7 +1,7 @@
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Star, Smile, Sparkles, Gem } from "lucide-react";
+import { Gem, CheckCircle2 } from "lucide-react";
 
 export default function EsthetiquePage() {
     return (
@@ -23,36 +23,40 @@ export default function EsthetiquePage() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-                    <div className="bg-white/20 backdrop-blur-lg p-8 rounded-2xl shadow-xl border border-white/20">
-                        <div className="mb-4 bg-[#23e1f0]/10 w-12 h-12 rounded-lg flex items-center justify-center">
-                            <Smile className="w-6 h-6 text-[#23e1f0]" />
-                        </div>
-                        <h3 className="text-xl font-bold mb-3 text-black">Blanchiment Dentaire</h3>
-                        <p className="text-black">
-                            Gagnez plusieurs teintes en une seule séance grâce à nos techniques de blanchiment professionnelles,
-                            sûres pour l'émail et durables.
-                        </p>
-                    </div>
-                    <div className="bg-white/20 backdrop-blur-lg p-8 rounded-2xl shadow-xl border border-white/20">
-                        <div className="mb-4 bg-[#23e1f0]/10 w-12 h-12 rounded-lg flex items-center justify-center">
-                            <Star className="w-6 h-6 text-[#23e1f0]" />
-                        </div>
-                        <h3 className="text-xl font-bold mb-3 text-black">Facettes Céramiques</h3>
-                        <p className="text-black">
-                            Corrigez la forme, la teinte ou les légers chevauchements de vos dents avec des facettes ultra-fines
-                            posées sur la face visible de vos dents.
-                        </p>
-                    </div>
-                    <div className="bg-white/20 backdrop-blur-lg p-8 rounded-2xl shadow-xl border border-white/20">
-                        <div className="mb-4 bg-[#23e1f0]/10 w-12 h-12 rounded-lg flex items-center justify-center">
-                            <Sparkles className="w-6 h-6 text-[#23e1f0]" />
-                        </div>
-                        <h3 className="text-xl font-bold mb-3 text-black">Réalignement Invisible</h3>
-                        <p className="text-black">
-                            Alignez vos dents en toute discrétion grâce aux gouttières transparentes.
-                            Une alternative esthétique et confortable aux bagues traditionnelles.
-                        </p>
+                <div className="max-w-3xl mx-auto mb-20">
+                    <div className="bg-white/70 backdrop-blur-lg p-8 rounded-xl border border-white/20 shadow-xl">
+                        <ul className="space-y-6">
+                            <li className="flex items-start gap-4">
+                                <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0 mt-1" strokeWidth={3} />
+                                <div>
+                                    <h3 className="text-lg font-bold text-black mb-1">Blanchiment Dentaire</h3>
+                                    <p className="text-black">
+                                        Gagnez plusieurs teintes en une seule séance grâce à nos techniques de blanchiment professionnelles,
+                                        sûres pour l'émail et durables.
+                                    </p>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-4">
+                                <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0 mt-1" strokeWidth={3} />
+                                <div>
+                                    <h3 className="text-lg font-bold text-black mb-1">Facettes Céramiques</h3>
+                                    <p className="text-black">
+                                        Corrigez la forme, la teinte ou les légers chevauchements de vos dents avec des facettes ultra-fines
+                                        posées sur la face visible de vos dents.
+                                    </p>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-4">
+                                <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0 mt-1" strokeWidth={3} />
+                                <div>
+                                    <h3 className="text-lg font-bold text-black mb-1">Réalignement Invisible</h3>
+                                    <p className="text-black">
+                                        Alignez vos dents en toute discrétion grâce aux gouttières transparentes.
+                                        Une alternative esthétique et confortable aux bagues traditionnelles.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 

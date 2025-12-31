@@ -18,9 +18,7 @@ export function Hero() {
                     <Button asChild size="lg">
                         <Link href="/book">Prendre Rendez-vous</Link>
                     </Button>
-                    <Button asChild variant="ghost" size="lg">
-                        <Link href="/services">Nos Services &rarr;</Link>
-                    </Button>
+
                 </div>
             </Container>
         </section>

@@ -15,7 +15,7 @@ export default function ImplantologiePage() {
                             <Implant className="w-8 h-8 text-[#23e1f0]" />
                         </div>
                     </div>
-                    <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6 font-serif text-slate-900">
+                    <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6 font-serif text-primary">
                         Soins Restaurateurs
                     </h1>
                     <p className="text-xl text-muted-foreground leading-relaxed">
@@ -58,25 +58,25 @@ export default function ImplantologiePage() {
                 </div>
 
                 <div className="border-t pt-16">
-                    <h2 className="text-3xl font-bold text-center mb-12 font-serif text-slate-900">Le déroulement de l'intervention</h2>
+                    <h2 className="text-3xl font-bold text-center mb-12 font-serif text-[#23e1f0]">Le déroulement de l'intervention</h2>
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                         <div className="text-center">
-                            <div className="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+                            <div className="w-12 h-12 bg-[#23e1f0] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
                             <h3 className="font-semibold mb-2">Bilan Complet</h3>
                             <p className="text-sm text-muted-foreground">Scanner 3D et étude de faisabilité osseuse.</p>
                         </div>
                         <div className="text-center">
-                            <div className="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+                            <div className="w-12 h-12 bg-[#23e1f0] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
                             <h3 className="font-semibold mb-2">Pose de l'Implant</h3>
                             <p className="text-sm text-muted-foreground">Intervention chirurgicale simple sous anesthésie locale.</p>
                         </div>
                         <div className="text-center">
-                            <div className="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+                            <div className="w-12 h-12 bg-[#23e1f0] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
                             <h3 className="font-semibold mb-2">Cicatrisation</h3>
                             <p className="text-sm text-muted-foreground">Période d'ostéointégration (2 à 4 mois).</p>
                         </div>
                         <div className="text-center">
-                            <div className="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
+                            <div className="w-12 h-12 bg-[#23e1f0] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
                             <h3 className="font-semibold mb-2">Pose de la Prothèse</h3>
                             <p className="text-sm text-muted-foreground">Mise en place de la couronne définitive en céramique.</p>
                         </div>

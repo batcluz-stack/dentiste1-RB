@@ -8,12 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'yearly',
             priority: 1,
         },
-        {
-            url: 'https://acme.com/services',
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
+
         {
             url: 'https://acme.com/about',
             lastModified: new Date(),

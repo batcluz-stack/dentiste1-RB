@@ -15,7 +15,7 @@ export default function SoinsConservateursPage() {
                             <Shield className="w-8 h-8 text-primary" strokeWidth={2.5} />
                         </div>
                     </div>
-                    <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6 font-serif text-slate-900">
+                    <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6 font-serif text-primary">
                         Dentisterie Générale
                     </h1>
                     <p className="text-xl text-muted-foreground leading-relaxed">
@@ -43,7 +43,7 @@ export default function SoinsConservateursPage() {
                             </p>
                         </div>
                         <div>
-                            <h2 className="text-2xl font-bold text-[#23e1f0] mb-4">Dévitalisation (Traitement endodontique)</h2>
+                            <h2 className="text-2xl font-bold text-[#23e1f0] mb-4">Dévitalisation</h2>
                             <p className="text-muted-foreground mb-4">
                                 Lorsque la carie a atteint le nerf, un traitement de racine est nécessaire pour sauver la dent.
                                 Réalisé sous anesthésie locale, cet acte est aujourd'hui parfaitement indolore.

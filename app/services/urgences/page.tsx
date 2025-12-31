@@ -11,7 +11,7 @@ export default function UrgencesPage() {
                     <div className="inline-flex items-center justify-center p-4 bg-red-100 rounded-full mb-6 animate-pulse">
                         <AlertCircle className="w-10 h-10 text-red-600" />
                     </div>
-                    <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6 font-serif text-slate-900">
+                    <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6 font-serif text-primary">
                         Urgences Dentaires
                     </h1>
                     <p className="text-xl text-slate-700 font-medium">

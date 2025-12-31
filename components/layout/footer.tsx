@@ -4,9 +4,9 @@ import { Tooth } from "@/components/icons";
 
 export function Footer() {
     return (
-        <footer className="border-t bg-slate-300 relative overflow-hidden">
+        <footer className="bg-cyan-50 relative overflow-hidden">
             {/* Pattern de fond "Chaos organisé" */}
-            <div className="absolute inset-0 pointer-events-none opacity-25 text-slate-600 flex flex-wrap justify-between items-center content-center overflow-hidden">
+            <div className="absolute inset-0 pointer-events-none opacity-40 text-cyan-200 flex flex-wrap justify-between items-center content-center overflow-hidden">
                 {[...Array(20)].map((_, i) => (
                     <Tooth
                         key={i}

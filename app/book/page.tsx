@@ -6,7 +6,7 @@ import { Phone, MapPin, Clock, Calendar } from "lucide-react";
 
 export default function BookingPage() {
     return (
-        <div className="py-20">
+        <div className="pt-32 pb-20">
             <Container>
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">

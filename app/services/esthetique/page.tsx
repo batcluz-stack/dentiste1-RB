@@ -14,7 +14,7 @@ export default function EsthetiquePage() {
                             <Gem className="w-8 h-8 text-[#23e1f0]" strokeWidth={2.5} />
                         </div>
                     </div>
-                    <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6 font-serif text-slate-900">
+                    <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6 font-serif text-primary">
                         Dentisterie Esthétique
                     </h1>
                     <p className="text-xl text-muted-foreground leading-relaxed">
@@ -60,20 +60,7 @@ export default function EsthetiquePage() {
                     </div>
                 </div>
 
-                <div className="bg-slate-900 text-white rounded-3xl p-8 md:p-16 overflow-hidden relative">
-                    <div className="relative z-10 max-w-2xl">
-                        <h2 className="text-3xl font-bold mb-6 font-serif">Le sourire dont vous avez toujours rêvé</h2>
-                        <p className="text-slate-300 mb-8 text-lg">
-                            Chaque sourire est unique. Nous réalisons une analyse esthétique complète de votre visage
-                            pour vous proposer un plan de traitement sur-mesure.
-                        </p>
-                        <Button asChild className="bg-white text-slate-900 hover:bg-white/90 font-bold text-lg px-8 py-6 h-auto">
-                            <Link href="/book">Consultation Esthétique</Link>
-                        </Button>
-                    </div>
-                    {/* Decorative pattern */}
-                    <div className="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-[#23e1f0]/20 rounded-full blur-3xl"></div>
-                </div>
+
             </Container>
         </div>
     );

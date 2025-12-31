@@ -1,18 +1,19 @@
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
-import { Stethoscope, Smile, ShieldCheck } from "lucide-react";
+import { Gem, ShieldCheck, Shield, AlertCircle } from "lucide-react";
 import { Implant } from "@/components/icons";
+import { cn } from "@/lib/utils";
 
 const services = [
     {
         title: "Dentisterie Générale",
         description: "Contrôles de routine, détartrages et soins préventifs pour toute la famille.",
-        icon: Stethoscope,
+        icon: Shield,
     },
     {
         title: "Dentisterie Esthétique",
         description: "Blanchiment des dents, facettes et embellissement du sourire pour votre confiance.",
-        icon: Smile,
+        icon: Gem,
     },
     {
         title: "Soins Restaurateurs",
@@ -22,7 +23,9 @@ const services = [
     {
         title: "Urgences Dentaires",
         description: "Rendez-vous le jour même pour les besoins dentaires urgents et le soulagement de la douleur.",
-        icon: ShieldCheck,
+        icon: AlertCircle,
+        iconLabelClass: "text-red-600",
+        bgClass: "bg-red-100/50"
     },
 ];
 
@@ -38,8 +41,8 @@ export function Services() {
                     {services.map((service, index) => (
                         <Card key={index} className="border-0 shadow-lg bg-card/50 hover:bg-accent/50 transition-colors">
                             <CardHeader>
-                                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                                    <service.icon className="h-6 w-6 text-primary" />
+                                <div className={cn("w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4", service.bgClass)}>
+                                    <service.icon className={cn("h-6 w-6 text-primary", service.iconLabelClass)} />
                                 </div>
                                 <CardTitle>{service.title}</CardTitle>
                             </CardHeader>
